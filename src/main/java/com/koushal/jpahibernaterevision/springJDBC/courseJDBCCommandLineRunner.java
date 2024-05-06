@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+//This is the class which run all the queried and because here we have implemented CommandLineRunner so spring will take care of running it.
 @Component
 public class courseJDBCCommandLineRunner implements CommandLineRunner {
 
