@@ -34,11 +34,12 @@ public class courseJDBCRepository {
     public void insert(){
         springJDBCTemplate.update(INSERT_QUERY);
     }
-
+    //here we are using query with dynamic data,that's why we used ? in query statement.
     public void insert(Course course){
         springJDBCTemplate.update(INSERT_QUERY,course.getId(),course.getName(),course.getAuthor());
     }
 
+    //here we are passing id in query.
     public void deleteCourse(int id){
         springJDBCTemplate.update(DELETE_QUERY_WITH_ID,id);
     }
